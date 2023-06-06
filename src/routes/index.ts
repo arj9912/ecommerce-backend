@@ -2,7 +2,7 @@
 import { Router } from 'express'
 import userRouter from '../routes/user.routes'
 import authRouter from '../routes/auth.routes'
-import profileRouter from '../routes/profile.routes'
+// import profileRouter from '../routes/profile.routes'
 
 const router = Router()
 
@@ -11,6 +11,6 @@ router.use('/', authRouter)
 
 router.use('/users', userRouter)
 
-router.use('/profile/me', profileRouter)
+// router.use('/profile/me', profileRouter)
 
 export default router
