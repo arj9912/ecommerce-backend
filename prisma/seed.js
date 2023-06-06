@@ -1,9 +1,9 @@
+"use strict";
 // /* eslint-disable @typescript-eslint/no-unsafe-return */
 // /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 // /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 // /* eslint-disable @typescript-eslint/no-unsafe-call */
 // // seed.ts
-
 // import {
 //     PrismaClient,
 //     Product,
@@ -14,9 +14,7 @@
 // } from '@prisma/client'
 // import { faker } from '@faker-js/faker'
 // import { createProductsWithCategories, createUser } from './helpers/products'
-
 // const prisma = new PrismaClient()
-
 // export async function clean() {
 //     await prisma.orderLine.deleteMany()
 //     await prisma.shoppingCartItem.deleteMany()
@@ -35,25 +33,20 @@
 //     await prisma.address.deleteMany()
 //     await prisma.shippingMethod.deleteMany()
 // }
-
 // export function randomNumber(min = 0, max = 10) {
 //     return Math.floor(Math.random() * (max - min + 1)) + min
 // }
-
 // export function sampleArray<T>(arr: Array<T>) {
 //     const count = randomNumber(1, arr.length - 1)
-
 //     return Array(count)
 //         .fill(null)
 //         .map(() => arr[randomNumber(0, arr.length - 1)])
 // }
-
 // async function seed() {
 //     try {
 //         await clean()
 //         const products = await createProductsWithCategories()
 //         const user = await createUser()
-
 //         await prisma.shopOrder.create({
 //             data: {
 //                 order_total: Math.random() * 100,
@@ -111,7 +104,6 @@
 //                 user: true,
 //             },
 //         })
-
 //         console.log('Data seeding completed.')
 //     } catch (error) {
 //         console.error('Error seeding data:', error)
@@ -119,7 +111,6 @@
 //         await prisma.$disconnect()
 //     }
 // }
-
 // seed()
 //     .then(() => {
 //         console.log('seed complete')
@@ -127,3 +118,4 @@
 //     .catch(() => {
 //         console.log('seed failed')
 //     })
+//# sourceMappingURL=seed.js.map

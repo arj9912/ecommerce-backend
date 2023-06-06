@@ -6,7 +6,8 @@ generator client {
 datasource db {
   provider = "postgresql"
 
-  url = "postgresql://postgres:postgres@localhost:5433/porjectDB?schema=public"
+  // url = "postgresql://postgres:postgres@localhost:5433/porjectDB?schema=public"
+  url = "postgresql://postgres:Lopumom@123@db.pzinzxmztgvrshkhvuak.supabase.co:5432/postgres"
 }
 
 model Product {
