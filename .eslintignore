@@ -1,0 +1,5 @@
+*.cjs
+*.js
+node_modules
+dist
+babel.config.js
